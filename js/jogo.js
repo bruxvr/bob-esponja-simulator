@@ -10,9 +10,8 @@
 function cliqueResponder (mensagemDoPrompt, respostaCerta, urlCerta, respostaErrada, urlErrada) {
     let estado = 0
     while (estado == 0){    
+    let escolhaDoJogador = prompt(mensagemDoPrompt)
  // estado = valor que eu quero usar para diferenciar respostas possíveis (1 e 2) de todas as outras respostas que não quero
- let escolhaDoJogador = prompt(mensagemDoPrompt)
- 
  //estado 1 = (resposta certa/errada, porém valores que eu desejo receber no prompt) 
  //estado 0 = qualquer outra resposta do prompt que não for 1 ou 2
  //estado 0 -> faz loop do prompt até receber 1 ou 2

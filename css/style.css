@@ -23,12 +23,15 @@ body {
     font-family: 'Spongefont';
 }
 
-h1 {
-    font-size: 100px;
-    text-align: center;
-    color: rgb(0, 0, 0);
-}
 
+header img {
+    width: 600px;
+    display: block;
+    margin-left: 480px;
+    margin-right: auto;
+
+
+}
 
 
 section button {

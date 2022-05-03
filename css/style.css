@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'Spongefont';
+    src: url(../fonts/spongefont.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+html {
+    height: 80%;
+}
+
+
+body {
+    background-image: url(../assets/play-intro.png);
+    background-color: aqua;
+    height: 80vh;
+    width: 100vw;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; 
+    font-family: 'Spongefont';
+}
+
+h1 {
+    font-size: 100px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+
+
+section button {
+    border-radius: 8px;
+    background-color: rgb(9, 136, 252);
+    color: rgb(251, 255, 0);
+    font-size: 50px;
+    font-family: 'Spongefont';
+    position: absolute;
+    top: 0px;
+    left: 1090px;
+    top: 340px;
+    cursor: pointer;
+
+}
+
+section button:hover {
+    border-radius: 8px;
+    background-color: rgb(251, 255,0);
+    color: rgb(9, 136, 252);
+    font-size: 50px;
+    font-family: 'Spongefont';
+    position: absolute;
+    top: 0px;
+    left: 1090px;
+    top: 340px;
+}
+
+section button a {
+    text-decoration: none;
+    color: rgb(251, 255, 0);
+}
+
+section button a:hover {
+    text-decoration: none;
+    color: rgb(9, 136, 252);
+}
+
+

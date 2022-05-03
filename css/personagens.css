@@ -29,6 +29,11 @@ body {
     background-attachment: fixed;
     background-size: cover; 
     font-family: 'Spongefont';
+    text-shadow:
+    -1px -1px 0px black, 
+    -1px 1px 0px black,                    
+    1px -1px 0px black,                  
+    1px 0px 0px black;
 }
 
 body h1 {
@@ -54,12 +59,21 @@ body .container-personagens  {
 body .container-personagens a {
     text-decoration: none;
     color: yellow;
+    font-size: 30px;
     border-radius: 8px;
-    border: 1px solid rgb(0, 224, 253);
+    border: 1px solid rgb(5, 142, 160);
     background-color: rgb(0, 224, 253);
     height: fit-content;
-    padding: 5px;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
     margin-right: 15px;
+    text-shadow: -1px -1px 0px black, 
+    -1px 1px 0px black,                    
+    1px -1px 0px black,                  
+    1px 0px 0px black;
+
+    
     
 }
 
@@ -68,6 +82,7 @@ body .container-personagens .personagem {
     width: 300px;
     height: 250px;
     justify-content: flex-end;
+    border: 1px solid red;
     
 }
 

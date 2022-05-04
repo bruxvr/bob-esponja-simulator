@@ -1,3 +1,22 @@
-@media (min-width: 1366px) {
+@media (max-width: 768px) {
     
+    body header {
+        font-size: 20px;
+        margin: 5px
+    }
+    
+    body section {
+        width: 300px;    
+        font-size: 2px;
+    
+    }
+
+    body section .box-enunciado {
+        padding: 0px;
+    }
+
+    body section .box-escolha {
+        width: 250px;
+    }
 }
+

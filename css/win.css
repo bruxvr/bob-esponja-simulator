@@ -66,6 +66,20 @@ body section .box-enunciado {
     text-shadow: 2px 2px black;
 }
 
+body section .box-enunciado a {
+    color: white;
+    font-size: 25px;
+    text-shadow: 2px 2px black;
+    
+}
+
+body section .box-enunciado a:hover {
+    color: blue;
+    font-size: 25px;
+    text-shadow: 2px 2px black;
+    
+}
+
 body section .box-escolha {
     padding: 40px;
     flex-direction: column;
@@ -74,6 +88,7 @@ body section .box-escolha {
     width: 480px;
    
 }
+
 
 body section button {
     padding: 10px;

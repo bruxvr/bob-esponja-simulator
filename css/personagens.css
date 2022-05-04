@@ -10,7 +10,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
 }
 
 body {
@@ -58,7 +57,6 @@ body header {
     width: 300px;
     margin: 20px;
     border-radius: 20px;
-    overflow: hidden;
     transition: 1s;
     flex-wrap: wrap;
     display: flex;
@@ -145,3 +143,26 @@ container .card:hover a:hover {
     background-color: rgb(2, 252, 252);
     color: rgb(245, 13, 13);
 }
+
+
+/* SCROLL BAR*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #d0ff00;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(0, 204, 255);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(0, 195, 255);
+  }

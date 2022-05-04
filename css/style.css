@@ -13,7 +13,7 @@ html {
 
 
 body {
-    background-image: url(../assets/play-intro.png);
+    background-image: url(../assets/background.png);
     background-color: aqua;
     height: 80vh;
     width: 100vw;
@@ -33,7 +33,7 @@ header img {
     margin-left: 480px;
     margin-right: auto;
     position: absolute;
-
+    
 }
 
 
@@ -43,12 +43,13 @@ header img {
     color: rgb(251, 255, 0);
     font-size: 50px;
     font-family: 'Spongefont';
-    position: absolute;
     z-index: 2;
-    top: 0px;
-    left: 1090px;
-    top: 340px;
+    left: 620px;
+    top: 320px;
     cursor: pointer;
+    position: relative;
+
+    
 
 
 }
@@ -59,10 +60,9 @@ button:hover {
     color: rgb(9, 136, 252);
     font-size: 50px;
     font-family: 'Spongefont';
-    position: absolute;
-    top: 0px;
-    left: 1090px;
-    top: 340px;
+    left: 620px;
+    top: 320px;
+    position: relative;
 }
 
 button a {

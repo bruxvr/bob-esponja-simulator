@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'Spongefont';
+    src: url(../fonts/spongefont.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url(../assets/background-lula.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: sans-serif;
+    font-size: 20px;
+    gap: 2rem;
+    height: 100vh;
+
+}
+
+body header {
+    font-family: 'Spongefont';
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    text-shadow: -1px -1px 0px black, 
+    -1px 1px 0px black,                    
+    1px -1px 0px black,                  
+    1px 0px 0px black;
+
+}
+
+
+body section {
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 750px;
+    height: 500px;
+    border-radius: 8px;
+    background-color:#0a0a0a62;
+    color: white;
+
+
+}
+
+body section .box-enunciado {
+    padding: 25px;
+    color: white;
+    font-size: 25px;
+    text-shadow: 2px 2px black;
+}
+
+body section .box-escolha {
+    padding: 40px;
+    flex-direction: column;
+    display: flex;
+    font-size: 20px;
+    width: 480px;
+   
+}
+
+body section button {
+    padding: 10px;
+    border-radius: 80px;
+    background-color: rgb(238, 255, 0);
+    color: rgb(5, 163, 255);
+    cursor: pointer;
+    font-size: 20px;
+  
+}
+
+body section button:hover {
+    background-color: rgb(3, 126, 197);
+    color: rgb(238, 255, 0);
+}

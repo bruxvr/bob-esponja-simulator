@@ -18,12 +18,15 @@ function cliqueResponder (mensagemDoPrompt, respostaCerta, urlCerta, respostaErr
    
  if( escolhaDoJogador == respostaCerta){
      
-     location.href = (urlCerta)
-     estado = 1}
+    location.href = (urlCerta)
+    estado = 1
+    break}
+
     
     else if ( escolhaDoJogador == respostaErrada) {
     location.href = (urlErrada)
-        estado = 1}
+    estado = 1
+    break}
     
     else {
         alert("Você só pode escolher 1 ou 2!")

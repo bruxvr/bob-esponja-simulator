@@ -8,6 +8,7 @@
 
 html {
     height: 80%;
+    overflow: hidden;
 }
 
 
@@ -21,6 +22,7 @@ body {
     background-attachment: fixed;
     background-size: cover; 
     font-family: 'Spongefont';
+    position: relative;
 }
 
 
@@ -29,26 +31,28 @@ header img {
     display: block;
     margin-left: 480px;
     margin-right: auto;
-
+    position: absolute;
 
 }
 
 
-section button {
+ button {
     border-radius: 8px;
     background-color: rgb(9, 136, 252);
     color: rgb(251, 255, 0);
     font-size: 50px;
     font-family: 'Spongefont';
     position: absolute;
+    z-index: 2;
     top: 0px;
     left: 1090px;
     top: 340px;
     cursor: pointer;
 
+
 }
 
-section button:hover {
+button:hover {
     border-radius: 8px;
     background-color: rgb(251, 255,0);
     color: rgb(9, 136, 252);
@@ -60,14 +64,138 @@ section button:hover {
     top: 340px;
 }
 
-section button a {
+button a {
     text-decoration: none;
     color: rgb(251, 255, 0);
 }
 
-section button a:hover {
+button a:hover {
     text-decoration: none;
     color: rgb(9, 136, 252);
 }
 
 
+
+/* BOLHAS  */
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+    position: absolute;
+    overflow: hidden;
+}
+
+.bub {
+    width: 130px;
+    height: 130px;
+    border: 1px solid white;
+    box-shadow: inset 5px -5px 10px white;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, .01);
+    backdrop-filter: blur(2px);
+    position: absolute;
+    bottom: -100px;
+    /* animation: bubble 3s ease-in infinite; */
+}
+
+.bub::before {
+    position: absolute;
+    content: "";
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 25px;
+    right: 23px;
+    box-shadow: 0px 0px 20px white;
+}
+
+.bub.a {
+    left: 10%;
+    animation: bubble2 2s ease-in 1s infinite;
+}
+
+.bub.b {
+    left: 20%;
+    animation: bubble 1.5s ease-in 1.4s infinite;
+}
+
+.bub.c {
+    left: 28%;
+    animation: bubble 5s ease-in 3.8s infinite;
+}
+
+.bub.d {
+    left: 40%;
+    animation: bubble 1.8s ease-in .5s infinite;
+}
+
+.bub.e {
+    left: 75%;
+    animation: bubble2 2.3s ease-in 2.5s infinite;
+}
+
+.bub.f {
+    left: 90%;
+    animation: bubble 2.5s ease-in 3s infinite;
+}
+
+.bub.g {
+    left: 60%;
+    animation: bubble 2.2s ease-in 2s infinite;
+}
+
+.bub.k {
+    left: 50%;
+    animation: bubble 1.6s ease-in 2s infinite;
+}
+
+.bub.i {
+    left: 65%;
+    animation: bubble2 1.8s ease-in 2.1s infinite;
+}
+
+.bub.j {
+    left: 3%;
+    animation: bubble 2s ease-in 1.5s infinite;
+}
+
+.bub.h {
+    left: 35%;
+    animation: bubble2 3s ease-in infinite;
+}
+
+@keyframes bubble {
+    0% {
+        opacity: 0;
+    }
+    10%,
+    93% {
+        opacity: 1;
+    }
+    100% {
+        transform: translate(90px, -700px);
+        display: none;
+    }
+}
+
+@keyframes bubble2 {
+    0% {
+        opacity: 0;
+    }
+    10%,
+    93% {
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-90px, -700px);
+        display: none;
+    }
+}
